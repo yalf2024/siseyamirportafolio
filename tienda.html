@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda virtual</title>
+    <link rel="stylesheet" href="estilostienda.css"> <!-- enlaza a la hoja de estilos-->
+</head>
+<body>
+    <header>
+        <h1>Tienda virtual</h1> <!-- titulo de la tienda-->
+    </header>
+
+    <div class="contenedor">
+        <div class="productos">
+            <!-- primer producto-->
+            <div class="producto">
+                <img src="css/img/silla2.jpg" alt="Silla de madera"> <!-- imagen del primer producto-->
+                <h3>Silla de madera de roble 70cm x 50cm</h3> <!-- nombre del producto-->
+                <p>Precio: s/70</p> <!-- Precio del primer producto-->
+                <button onclick="addtoCarrito('Silla de madera de roble', 70)">Agregar al carrito</button> <!-- boton para agregar al carrito-->
+            </div>
+
+            <!-- segundo producto-->
+            <div class="producto">
+                <img src="css/img/mesa.jpg" alt="Mesa de madera">
+                <h3>Mesa de madera de roble oscuro 70cm x 70 cm x 150cm</h3>
+                <p>Precio: s/300</p>
+                <button onclick="addtoCarrito('Mesa de madera de roble oscuro', 300)">Agregar al carrito</button>
+            </div>
+
+            <!-- tercer producto-->
+             <div class="producto">
+                <img src="css/img/comedor.jpg" alt="Comedor">
+                <h3>Juego de comedor de madera de roble</h3>
+                <p>Precio: s/900</p>
+                <button onclick="addtoCarrito('Juego de comedor de madera de roble', 900)">Agregar al carrito</button>
+             </div>
+        </div>
+        <div class="carrito">
+            <h2>Carrito de compra</h2> <!-- titulo de la seccion del carrito-->
+            <ul id="car-list">
+                <!-- espacio donde se agrega los productos-->
+
+            </ul> 
+            <p>Total: s/<span id="car-total">0</span></p> <!-- total de compra-->
+            <button onclick="compra()">Realizar compra</button> <!-- botton para realizar compra-->
+         </div>
+    </div>
+
+    <script src="js/logica.js"></script> <!--vincular el archivo javascript-->
+</body>
+</html>

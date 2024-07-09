@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer blog</title>
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Vinvula el archivo html con el archivo css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--libreria para los iconoc -->
+    <link rel="icon" href="css/img/favicon.ico" type="img/icono-blog"> <!-- agregamos el icono para la ventana--> 
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenidos a mi primer blog</h1>
+    </header><!-- encabezado d nivel 1-->
+    <nav>
+        <a href="#acerca">Acerca de mi</a> <!-- Asignar a la seccion "acerca" dentro del documento-->
+        <a href="#adiciones">Mis aficiones</a> <!-- Asignar a la seccion "adiciones" dentro del documento-->
+        <a href="#redes">Mis redes sociales</a> <!-- Asignar a la seccion "redes" dentro del documento-->
+        <a href="#foto">Mi foto</a> <!-- Asignar a la seccion "foto" dentro del documento-->
+        <a href="#conocimientos">Mis conocimientos</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Correo de contacto</a> <!-- Asignar a la seccion "contacto" dentro del documento-->
+    </nav>
+    <div class="container">
+        <h2 id="acerca">Acerca de mi</h2> <!-- encabezado de ivel 2-->
+        <p>Me llamo Yamir y soy un estudiante del curso de Arquitectura de entornos web</p>
+        <p>Estoy aprendiendo HTML. Me gusta programar y aprender cosas nuevas</p>
+        <h3 id="aficiones">Mis aficiones</h3> <!-- encabezado de nivel 3-->
+        <ul> <!--lista sin orden, con viñetas -->
+
+            <li>Hacer deporte</li><!-- cada de una lista-->
+            <ol>
+                <li> Futbol</li>
+                <li> Voley</li>
+                <li> Ciclismo</li>
+            </ol>
+
+            <li>Leer</li>
+            <ol>
+                <li>Movidick</li>
+                <li>Don Quijote </li>
+                <li>Crimen y castigo</li>
+            </ol>
+            <li>Cocinar</li>
+            <ol>
+                <li>Arroz con pollo</li>
+                <li>Ceviche</li>
+                <li>Causa</li>
+            </ol>
+            <li>Jugar videojuegos</li>
+            <ol>
+                <li> Valorant</li>
+                <li> FIFA</li>
+                <li> Fornite</li>
+            </ol>
+
+            <ul>
+                <h3 id="redes">Mis redes sociales</h3>
+                <div class="social-icons">
+                <!--<ol> --> <!--Lista ordenada, numerica -->
+                    <a href="https://www.facebook.com/andersson.lima.9210" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a>
+                <!-- icono de facebook--><!-- Etiqueta para agreagar enlaces -->
+                    <a href="https://www.instagram.com/andersonlima_1012" target="_blank" title="instragram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@and3rssonlf" target="_blank" title="tiktok"><i class="fab fa-tiktok"></i></a>
+                    <!-- target=_blank para abrir el enlace en una nueva pestaña-->
+                <!--</ol> -->
+            </div>
+
+                <h3 id="foto">Mi foto</h3>
+                <img src="css/img/fotico.jpeg" alt="Aqui debe haber una foto de perfil">
+                <!-- alt para agregar un texto alternativo en caso que haya error con la carga de imagem-->
+                <!-- etiqueta imagen, src indica el origen de dicha imagen-->
+
+                <h3 id="conocimientos">Mis conocimientos</h3> <!-- tabla de conocimietos de programacion-->
+                <table>
+                    <tr>
+                        <th>Lenguaje</th> <!-- encabezado para la columna "lenguaje"-->
+                        <th>Nivel</th> <!-- encabezado para la columna "nivel"-->
+                    </tr>
+                    <tr>
+                        <td>HTML</td> <!-- contenido de la misma fila de la columna "lenguaje"-->
+                        <td>Avanzado</td> <!-- contenido de la fila "avanzado"-->
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Basico</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Basico</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>Basico</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Avanzado</td>
+                    </tr>
+                </table>
+
+                <h3 id="proyectos">Proyectos</h3>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="tienda.html" target="_blank">Tienda virtual</a></li>
+                    </ul>
+                </div>
+                <h3>Testimonios</h3>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <p>"Yamir Lima es un desarrollador en HTML y CSS apasionado que siempre busca aprender de los demás<br>
+                            y mejorar sus habilidades"</p>
+                        <div class="author">Victor Rengifo</div>
+                    </div>
+                    
+                </div>
+                <h3 id="contacto"> Correo de contacto</h3>
+                <p>Si deseas contactarme para un trabajo, enviame un correo a la siguiente dirección:
+                    <a href="mailto:ylimaf@isise.edu.pe">ylimaf@isise.edu.pe</a>
+                    <!--Etiqueta para agregar enlace, y usamos el mailto para crear el enlace al correo electrobico -->
+                </p>
+                <h3>Formulario</h3>
+                <form>
+                    <label>Nombre</label><br> <!-- cuadro de texto no editable-->
+                    <input type="text" id="name" name="name" required><br> <!-- cuadro de texto editable-->
+                    <label>Correo electronico</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label>Mensaje</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                    <input type="submit" value="Enviar">
+                </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Yamir Lima. Derechos reservados</p>
+    </footer>
+</body>
+
+</html>
